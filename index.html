@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digit Recognizer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js" integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            padding-top: 5%;
+            background-color: plum;
+        }
+        #ui {
+            margin: auto;
+            width: 70vw;
+            height: 60vh;
+            background-color: gray;
+            padding: 3%;
+            display: flex;
+        }
+        canvas {
+            background-color: black;
+        }
+        #ui li {
+            list-style: none;
+            color:beige;
+            font-size: 1.5em;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        button {
+            margin-top: 32%;
+            margin-left: -10%;
+            width: 7vw;
+            height: 5vh;
+        }
+    </style>
+</head>
+<body>
+    <section id="ui">
+        <canvas id="canvas"></canvas>
+        <ul>
+        </ul>
+        <button id="clear">Clear</button>
+    </section>
+</body>
+</html>
+<script src="main.js"></script>
