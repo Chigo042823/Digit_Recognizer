@@ -1,6 +1,6 @@
 for (i = 0; i < 10; i++) {
     document.querySelector("ul").innerHTML += "<li id='l" + i + "'>" + i + ": " + "0.00%</li>";
-    let int = 128 * ((8 / (i + 1)) / 9);
+    let int = 100 * (i / 10);
     document.getElementById("l" + i).style.color = "rgb(" + int + ", " + int + ", " + int   + ")";
 }
 
@@ -76,7 +76,7 @@ function flush_predictions(predictions) {
     document.querySelector("ul").innerHTML = "";
     for(i = 0; i < predictions.length; i++) {
         document.querySelector("ul").innerHTML += "<li id='l" + i + "'>" + predictions[i] + "</li>";
-        let int = 255 * ((8 / (i + 1)) / 9);
+        let int = 100 * (i / 10);
         document.getElementById("l" + i).style.color = "rgb(" + int + ", " + int + ", " + int   + ")";
     }
 }
