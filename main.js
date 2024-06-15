@@ -1,6 +1,6 @@
 for (i = 0; i < 10; i++) {
     document.querySelector("ul").innerHTML += "<li id='l" + i + "'>" + i + ": " + "0.00%</li>";
-    let int = 255 * ((8 / (i + 1)) / 9);
+    let int = 128 * ((8 / (i + 1)) / 9);
     document.getElementById("l" + i).style.color = "rgb(" + int + ", " + int + ", " + int   + ")";
 }
 
